@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Download, ExternalLink } from 'lucide-react';
-import profileImage from '@/assets/thanuka-profile.jpg';
+import profileImage from '@/assets/thanuka-profile-new.jpg';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -52,7 +52,7 @@ const Hero = () => {
                 variant="outline" 
                 size="lg"
                 className="text-lg px-8 py-6 bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-sm"
-                onClick={() => window.open('#', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1-qfFUhpeUF8G_uWDhASd9qj3DI0suTyT/view?usp=drive_link', '_blank')}
               >
                 Download CV
                 <Download className="ml-2 h-5 w-5" />

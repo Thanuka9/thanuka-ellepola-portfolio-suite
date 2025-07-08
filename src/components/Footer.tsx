@@ -48,7 +48,7 @@ const Footer = () => {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button 
                   variant="gradient" 
-                  onClick={() => window.open('#', '_blank')}
+                  onClick={() => window.open('https://drive.google.com/file/d/1-qfFUhpeUF8G_uWDhASd9qj3DI0suTyT/view?usp=drive_link', '_blank')}
                 >
                   <Download className="mr-2 h-4 w-4" />
                   Download CV
@@ -145,7 +145,7 @@ const Footer = () => {
                 <Mail className="h-5 w-5" />
               </a>
               <button
-                onClick={() => window.open('#', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1-qfFUhpeUF8G_uWDhASd9qj3DI0suTyT/view?usp=drive_link', '_blank')}
                 className="text-neutral-400 hover:text-white transition-colors duration-300"
                 aria-label="Download CV"
               >

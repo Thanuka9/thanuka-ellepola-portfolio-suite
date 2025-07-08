@@ -81,28 +81,29 @@ The research contributes to the growing field of healthcare analytics by providi
               </CardContent>
             </Card>
 
-            {/* PDF Viewer Placeholder */}
+            {/* PDF Viewer */}
             <Card className="border-0 shadow-soft bg-gradient-card">
               <CardHeader>
                 <CardTitle className="font-display text-xl text-neutral-900">
                   Thesis Document
                 </CardTitle>
+                <p className="text-neutral-600 text-sm">
+                  Read the complete research thesis online (download not available)
+                </p>
               </CardHeader>
               <CardContent>
-                <div className="bg-neutral-100 border-2 border-dashed border-neutral-300 rounded-lg p-12 text-center">
-                  <FileText className="h-16 w-16 text-neutral-400 mx-auto mb-4" />
-                  <h3 className="font-semibold text-neutral-700 mb-2">
-                    Thesis Document Available for Review
-                  </h3>
-                  <p className="text-neutral-500 mb-4">
-                    The complete thesis document will be embedded here for online viewing once defense is completed.
+                <div className="w-full h-96 bg-neutral-100 rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://drive.google.com/file/d/1DSEb6-RCTXeyADkLHzAGkccv7wqjSQDD/preview"
+                    className="w-full h-full border-0"
+                    title="Thesis Document"
+                    allow="autoplay"
+                  />
+                </div>
+                <div className="mt-4 text-center">
+                  <p className="text-sm text-neutral-500">
+                    📄 Document is view-only for intellectual property protection
                   </p>
-                  <div className="flex items-center justify-center">
-                    <AlertCircle className="h-4 w-4 text-amber-500 mr-2" />
-                    <span className="text-sm text-amber-600">
-                      Currently in review • Expected completion: Early 2025
-                    </span>
-                  </div>
                 </div>
               </CardContent>
             </Card>

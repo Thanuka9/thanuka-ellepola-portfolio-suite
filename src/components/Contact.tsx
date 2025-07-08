@@ -131,7 +131,7 @@ const Contact = () => {
                 <Button 
                   variant="secondary" 
                   className="w-full"
-                  onClick={() => window.open('#', '_blank')}
+                  onClick={() => window.open('https://drive.google.com/file/d/1-qfFUhpeUF8G_uWDhASd9qj3DI0suTyT/view?usp=drive_link', '_blank')}
                 >
                   <Download className="mr-2 h-4 w-4" />
                   Download PDF
