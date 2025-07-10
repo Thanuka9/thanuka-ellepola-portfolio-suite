@@ -31,7 +31,7 @@ const About = () => {
       degree: 'Master\'s in Business Analytics',
       institution: 'University of Colombo',
       period: '2023 - 2025',
-      status: 'In Progress'
+      status: 'Graduated'
     },
     {
       degree: 'BSc Computer Systems & Networking',
@@ -134,7 +134,7 @@ const About = () => {
                         <h4 className="font-semibold text-neutral-900 text-sm">
                           {edu.degree}
                         </h4>
-                        <Badge variant={edu.status === 'In Progress' ? 'default' : 'secondary'} className="text-xs">
+                        <Badge variant={edu.status === 'Graduated' ? 'default' : 'secondary'} className="text-xs">
                           {edu.status}
                         </Badge>
                       </div>

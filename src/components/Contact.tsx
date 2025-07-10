@@ -8,8 +8,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'thanuka.ellepola@email.com',
-      href: 'mailto:thanuka.ellepola@email.com',
+      value: 'thanuka.ellepola@gmail.com',
+      href: 'mailto:thanuka.ellepola@gmail.com',
       color: 'bg-tech-blue/10 text-tech-blue'
     },
     {
@@ -22,8 +22,8 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/thanuka-ellepola',
-      href: 'https://linkedin.com/in/thanuka-ellepola',
+      value: 'linkedin.com/in/thanuka-ellepola-a559b01aa',
+      href: 'https://www.linkedin.com/in/thanuka-ellepola-a559b01aa/',
       color: 'bg-primary/10 text-primary'
     },
     {
@@ -195,7 +195,19 @@ const Contact = () => {
                     placeholder="Tell me about your project or opportunity..."
                   ></textarea>
                 </div>
-                <Button variant="gradient" className="w-full">
+                <Button 
+                  variant="gradient" 
+                  className="w-full"
+                  onClick={() => {
+                    const name = (document.querySelector('input[placeholder="John Doe"]') as HTMLInputElement)?.value;
+                    const email = (document.querySelector('input[placeholder="john@example.com"]') as HTMLInputElement)?.value;
+                    const subject = (document.querySelector('input[placeholder="Project Discussion / Job Opportunity / Collaboration"]') as HTMLInputElement)?.value;
+                    const message = (document.querySelector('textarea[placeholder="Tell me about your project or opportunity..."]') as HTMLTextAreaElement)?.value;
+                    
+                    const mailtoLink = `mailto:thanuka.ellepola@gmail.com?subject=${encodeURIComponent(subject || 'Contact from Portfolio')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+                    window.open(mailtoLink);
+                  }}
+                >
                   <Send className="mr-2 h-4 w-4" />
                   Send Message
                 </Button>
@@ -261,7 +273,7 @@ const Contact = () => {
                 <Button 
                   variant="gradient" 
                   size="lg"
-                  onClick={() => window.open('mailto:thanuka.ellepola@email.com', '_blank')}
+                  onClick={() => window.open('mailto:thanuka.ellepola@gmail.com', '_blank')}
                 >
                   <Mail className="mr-2 h-5 w-5" />
                   Send Email
@@ -269,7 +281,7 @@ const Contact = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  onClick={() => window.open('https://linkedin.com/in/thanuka-ellepola', '_blank')}
+                  onClick={() => window.open('https://www.linkedin.com/in/thanuka-ellepola-a559b01aa/', '_blank')}
                 >
                   <ExternalLink className="mr-2 h-5 w-5" />
                   Connect on LinkedIn

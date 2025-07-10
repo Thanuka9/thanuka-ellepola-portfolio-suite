@@ -14,9 +14,9 @@ const Footer = () => {
   ];
 
   const contactInfo = [
-    { icon: Mail, label: 'thanuka.ellepola@email.com', href: 'mailto:thanuka.ellepola@email.com' },
+    { icon: Mail, label: 'thanuka.ellepola@gmail.com', href: 'mailto:thanuka.ellepola@gmail.com' },
     { icon: Phone, label: '+94 77 670 5832', href: 'tel:+94776705832' },
-    { icon: Linkedin, label: 'LinkedIn Profile', href: 'https://linkedin.com/in/thanuka-ellepola' },
+    { icon: Linkedin, label: 'LinkedIn Profile', href: 'https://www.linkedin.com/in/thanuka-ellepola-a559b01aa/' },
     { icon: MapPin, label: 'Colombo, Sri Lanka', href: null }
   ];
 
@@ -131,14 +131,14 @@ const Footer = () => {
             {/* Professional Links */}
             <div className="flex items-center space-x-4">
               <a
-                href="https://linkedin.com/in/thanuka-ellepola"
+                href="https://www.linkedin.com/in/thanuka-ellepola-a559b01aa/"
                 className="text-neutral-400 hover:text-white transition-colors duration-300"
                 aria-label="LinkedIn Profile"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="mailto:thanuka.ellepola@email.com"
+                href="mailto:thanuka.ellepola@gmail.com"
                 className="text-neutral-400 hover:text-white transition-colors duration-300"
                 aria-label="Email Contact"
               >
